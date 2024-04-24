@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+body {
+    height: 100vh;
+    font-family: "Kumbh Sans", sans-serif;
+    background: url(../imgs/bg-pattern-bottom.svg) bottom -600px right -150px no-repeat, url(../imgs/bg-pattern-top.svg) top -500px left -200px no-repeat;
+    background-color: var(--Dark-cyan);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+    --White: hsl(0, 0%, 100%);
+    --main-transition: 0.4s;
+}
+hr {
+    margin: 20px 0;
+    border: none;
+    height: 1px;
+    background-color: rgb(225 225 225);
+    width: 100%;
+}
+p {
+    font-size: 18px;
+    color: var(--Dark-grayish-blue);
+    letter-spacing: 2px;
+}
+main .container {
+    background-color: var(--White);
+    border-radius: 15px;
+    overflow: hidden;
+    padding-bottom: 30px;
+}
+main .container .data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main .container .data img {
+    width: 100px;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-top: -50px;
+}
+main .container .data .about {
+    margin-top: 15px;
+    color: var(--Very-dark-desaturated-blue);
+    text-align: center;
+}
+main .container .data .about h2 span {
+    color: var(--Dark-grayish-blue);
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 7px;
+}
+main .container .data .details {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+main .container .data .details h3 {
+    color: var(--Very-dark-desaturated-blue);
+}
+main .container .data .details p {
+    color: var(--Dark-gray);
+    font-size: 12px;
+}
+@media (max-width: 375px){
+    main .container {
+        width: 300px;
+    }
+}
